@@ -33,17 +33,17 @@ class Pompe {
         $v -> setLitre($v -> getReservoir());
     }
 }
-$v = new Vehicule;
-$v -> setLitre(5);
-echo 'Véhicule : ' . $v -> getLitre() . 'L <br>';
-$v -> setReservoir(50);
-echo 'Réservoire : '.$v -> getReservoir(50) . 'L <br>';
+$polo = new Vehicule;
+$polo -> setLitre(5);
+echo 'Véhicule : ' . $polo -> getLitre() . 'L <br>';
+$polo -> setReservoir(50);
+echo 'Réservoire : '.$polo -> getReservoir(50) . 'L <br>';
 //-----
 $p = new Pompe;
 $p -> setLitre(800);
 echo 'pompe : ' . $p -> getLitre() . 'L <hr>';
 
-$p -> donneEssence($v);
+$p -> donneEssence($polo);
 echo ' après ravitaillement <br>';
-echo 'Véhicule : ' . $v -> getLitre() . 'L <br>';
+echo 'Véhicule : ' . $polo -> getLitre() . 'L <br>';
 echo 'pompe : ' . $p -> getLitre() . 'L <hr>';
