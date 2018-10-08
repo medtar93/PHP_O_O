@@ -33,3 +33,6 @@ var_dump($singleton2);
 echo '</pre>';
 
 // $singleton2 et $singleton font référence au même objet (#1). 
+
+
+
